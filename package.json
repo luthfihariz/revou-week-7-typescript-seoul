@@ -1,0 +1,17 @@
+{
+  "name": "revou-week-7-typescript-seoul",
+  "version": "1.0.0",
+  "description": "RevoU Week 7 — TypeScript course demo files (Seoul cohort)",
+  "scripts": {
+    "build": "tsc",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luthfihariz/revou-week-7-typescript-seoul.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
