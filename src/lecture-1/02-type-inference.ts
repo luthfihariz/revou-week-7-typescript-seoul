@@ -12,6 +12,7 @@ export {};
 // These two lines are IDENTICAL to TypeScript:
 let a: number = 0;  // explicit annotation
 let b = 0;          // inferred as number — hover over `b` in VS Code!
+let c = "Hello"
 
 // TypeScript already knows `b` is a number, so this still errors:
 // b = "hello"; // Error: Type 'string' is not assignable to type 'number'
@@ -25,21 +26,6 @@ console.log(city, population, isBusy);
 
 // Try reassigning to wrong type — still an error even without annotation:
 // city = 999;  // Error: Type 'number' is not assignable to type 'string'
-
-// --- Inference in arrays ---
-let fruits = ["apple", "banana", "mango"]; // inferred: string[]
-fruits.push("grape");    // OK
-// fruits.push(100);     // Error: Argument of type 'number' is not assignable to type 'string'
-
-// --- Inference in objects ---
-let user = {
-  name: "Alice",
-  age: 25,
-};
-// TypeScript infers: { name: string; age: number }
-user.name = "Bob"; // OK
-// user.age = "old"; // Error: Type 'string' is not assignable to type 'number'
-
 // ============================================================
 // INFERENCE vs ANNOTATION — when to use which?
 //

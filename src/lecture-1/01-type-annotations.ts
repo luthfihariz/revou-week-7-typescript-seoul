@@ -21,7 +21,6 @@ let age: number = 25;
 let active: boolean = true;
 
 console.log(name, age, active);
-
 // --- More realistic examples ---
 
 let username: string = "alice123";
